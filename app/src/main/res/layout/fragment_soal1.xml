@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".soal1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/soalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apa ibu kota Indonesia?"
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp" />
+            <Button
+                android:id="@+id/btnJawabanSalah1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bandung"
+                android:layout_marginBottom="12dp" />
+            <Button
+                android:id="@+id/btnJawabanBenar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jakarta"
+                android:layout_marginBottom="12dp" />
+            <Button
+                android:id="@+id/btnJawabanSalah2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surabaya" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
