@@ -36,7 +36,7 @@ class soal9Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentSoal8Binding.inflate(inflater, container, false)
+        _binding = FragmentSoal9Binding.inflate(inflater, container, false)
         return binding.root
     }
 

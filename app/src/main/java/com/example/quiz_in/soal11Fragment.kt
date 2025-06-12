@@ -21,7 +21,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class soal11Fragment : Fragment() {
     // TODO: Rename and change types of parameters
-    private var _binding: FragmentSoal10Binding? = null
+    private var _binding: FragmentSoal11Binding? = null
     private val binding get() = _binding!!
 
     private var benar = 0
@@ -29,20 +29,18 @@ class soal11Fragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
         }
     }
 
     override fun onCreateView(
-        override fun onCreateView(
-    inflater: LayoutInflater, container: ViewGroup?,
-    savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentSoal11Binding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -62,7 +60,7 @@ class soal11Fragment : Fragment() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = soal8Fragment()
+        val nextFragment = soal9Fragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
