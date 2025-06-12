@@ -38,19 +38,14 @@ class soal2Fragment : Fragment() {
 
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal3()
+        }
 
-        // Tampilkan skor di TextView
-        binding.tvSkorSementara.text = "Jumlah Jawaban Benar: $benar"
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,
-            object : OnBackPressedCallback(true) {
-                override fun handleOnBackPressed() {
-                    val intent = Intent(requireContext(), MainActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
-                    startActivity(intent)
-                    requireActivity().finish()
-                }
-            }
-        )
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal3()
+        }
 
     }
 
@@ -58,6 +53,13 @@ class soal2Fragment : Fragment() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
+        val nextFragment = soal3Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .addToBackStack(null)
+            .commit()
 
 
     }
