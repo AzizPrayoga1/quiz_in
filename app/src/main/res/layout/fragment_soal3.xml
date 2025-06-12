@@ -21,6 +21,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="SOAL 3" />
+
+            <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -30,6 +38,7 @@
                 android:textStyle="bold"
                 android:textSize="25sp"
                 android:text="Disjungsi (∨) bernilai salah hanya jika kedua pernyataan bernilai salah." />
+
         </LinearLayout>
 
         <LinearLayout
