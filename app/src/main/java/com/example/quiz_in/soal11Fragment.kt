@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.quiz_in.databinding.FragmentSoal10Binding
+import com.example.quiz_in.databinding.FragmentSoal11Binding
+import com.example.quiz_in.databinding.FragmentSoal7Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,11 +35,42 @@ class soal11Fragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        override fun onCreateView(
+    inflater: LayoutInflater, container: ViewGroup?,
+    savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_soal11, container, false)
+        _binding = FragmentSoal11Binding.inflate(inflater, container, false)
+        return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Ambil nilai skor dari fragment sebelumnya
+        benar = arguments?.getInt("benar", 0) ?: 0
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal12()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal12()
+        }
+
+    }
+    private fun lanjutKeSoal12() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal8Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .addToBackStack(null)
+            .commit()
+
+
     }
 
     companion object {
