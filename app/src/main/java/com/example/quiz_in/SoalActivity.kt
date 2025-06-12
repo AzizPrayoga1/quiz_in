@@ -1,6 +1,8 @@
 package com.example.quiz_in
 
+import android.content.Intent
 import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,6 +15,7 @@ class SoalActivity : AppCompatActivity() {
         enableEdgeToEdge()
         val binding = ActivitySoalBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         if(savedInstanceState == null){
             supportFragmentManager.beginTransaction().replace(R.id.container, soal1Fragment()).commit()
         }
@@ -22,4 +25,12 @@ class SoalActivity : AppCompatActivity() {
             insets
         }
     }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
+        finish()
+    }
+
 }
