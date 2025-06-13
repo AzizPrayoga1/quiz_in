@@ -51,7 +51,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
             <Button
-                android:id="@+id/btnsalah1"
+                android:id="@+id/btnbenar1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

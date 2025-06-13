@@ -21,7 +21,7 @@ private const val ARG_PARAM2 = "param2"
 class soal20Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentSoal20Binding? = null
-    private val binding = _binding!!
+    private val binding get() =  _binding!!
     private var benar = 0
 
     override fun onCreateView(

@@ -37,7 +37,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="Ada mahasiswa yang tidak belajar” merupakan contoh dari kuantor eksistensial."
+                android:text="Logika predikat hanya menggunakan simbol logika dasar tanpa variabel."
                 android:textSize="25sp"
                 android:textStyle="bold" />
 

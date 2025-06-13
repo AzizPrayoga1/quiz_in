@@ -21,7 +21,7 @@ private const val ARG_PARAM2 = "param2"
 class soal19Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding:FragmentSoal19Binding? = null
-    private val binding = _binding!!
+    private val binding get() = _binding!!
     private var benar = 0
 
 
@@ -32,9 +32,6 @@ class soal19Fragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentSoal19Binding.inflate(inflater,container,false)
         return binding.root
-    }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -61,6 +58,9 @@ class soal19Fragment : Fragment() {
             .replace(R.id.container, nextFragment)
             .addToBackStack(null)
             .commit()
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
     }
     companion object {
         /**
