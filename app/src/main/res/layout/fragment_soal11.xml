@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".soal3Fragment">
+    tools:context=".soal11Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout4"
+            android:id="@+id/linearLayout9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -21,34 +21,34 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textView21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="SOAL 11"
                 android:textSize="25sp"
-                android:text="SOAL 3" />
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textView20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:textStyle="bold"
+                android:text="Logika informatika hanya digunakan dalam dunia akademik dan tidak dalam pengembangan perangkat lunak."
                 android:textSize="25sp"
-                android:text="Disjungsi (∨) bernilai salah hanya jika kedua pernyataan bernilai salah." />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="1dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
 
             <Button
                 android:id="@+id/btnsalah1"
@@ -58,7 +58,7 @@
                 android:text="True" />
 
             <Button
-                android:id="@+id/btnsalah1"
+                android:id="@+id/btnbenar1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
