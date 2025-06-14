@@ -66,10 +66,7 @@ class soal10Fragment : Fragment() {
 
         parentFragmentManager.beginTransaction()
             .replace(R.id.container, nextFragment)
-            .addToBackStack(null)
             .commit()
-
-
     }
 
     companion object {

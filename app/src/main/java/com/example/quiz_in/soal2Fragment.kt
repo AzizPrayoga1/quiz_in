@@ -58,10 +58,7 @@ class soal2Fragment : Fragment() {
 
         parentFragmentManager.beginTransaction()
             .replace(R.id.container, nextFragment)
-            .addToBackStack(null)
             .commit()
-
-
     }
 
     override fun onDestroyView() {

@@ -56,10 +56,7 @@ class soal15Fragment : Fragment() {
 
         parentFragmentManager.beginTransaction()
             .replace(R.id.container, nextFragment)
-            .addToBackStack(null)
             .commit()
-
-
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

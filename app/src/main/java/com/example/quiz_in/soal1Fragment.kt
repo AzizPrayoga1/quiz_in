@@ -33,26 +33,30 @@ class soal1Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Pas tombol salah ditekan, langsung lanjut ke soal 2 tanpa tambah nilai benar
         binding.btnsalah1.setOnClickListener {
             lanjutKeSoal2()
         }
 
+        // Pas tombol benar ditekan, tambah nilai benar lalu lanjut ke soal 2
         binding.btnbenar1.setOnClickListener {
             benar += 1
             lanjutKeSoal2()
         }
     }
 
+    // Fungsi untuk pindah ke fragment soal 2 dengan membawa data jumlah benar
     private fun lanjutKeSoal2() {
         val bundle = Bundle()
+        // Masukkan nilai benar ke dalam bundle supaya bisa dipakai di fragment berikutnya
         bundle.putInt("benar", benar)
 
         val nextFragment = soal2Fragment()
+        // Kirim data bundle ke fragment soal berikutnya
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
             .replace(R.id.container, nextFragment)
-            .addToBackStack(null)
             .commit()
     }
 
@@ -60,7 +64,6 @@ class soal1Fragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 
     companion object {
         /**
