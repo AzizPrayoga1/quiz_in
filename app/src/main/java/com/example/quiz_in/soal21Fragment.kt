@@ -23,9 +23,6 @@ class soal21Fragment : Fragment() {
     private val binding get() =  _binding!!
     private var benar = 0
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,7 +32,14 @@ class soal21Fragment : Fragment() {
         _binding = FragmentSoal20Binding.inflate(inflater,container,false)
         return binding.root
     }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
