@@ -37,6 +37,18 @@ class soal21Fragment : Fragment() {
 
     }
 
+    private fun lanjutKeSoal22() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal22Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
