@@ -21,13 +21,6 @@ class soal23Fragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,6 +30,9 @@ class soal23Fragment : Fragment() {
         return inflater.inflate(R.layout.fragment_soal23, container, false)
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
