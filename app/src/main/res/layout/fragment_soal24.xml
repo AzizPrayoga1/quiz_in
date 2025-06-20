@@ -36,6 +36,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
                 android:text="Dalam logika, “atau eksklusif” berbeda dengan “atau inklusif”." />
         </LinearLayout>
 
