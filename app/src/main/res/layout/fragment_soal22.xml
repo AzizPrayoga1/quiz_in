@@ -36,6 +36,7 @@
                 android:textStyle="bold"
                 android:textSize="25sp"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:text="Implikasi “p → q” tetap benar jika p salah dan q salah" />
         </LinearLayout>
 
