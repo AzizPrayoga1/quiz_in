@@ -36,6 +36,7 @@
                 android:textSize="25sp"
                 android:gravity="center"
                 android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
                 android:text="Nilai kebenaran dari “p ∨ q” adalah salah hanya jika p dan q keduanya salah. " />
 
         </LinearLayout>
