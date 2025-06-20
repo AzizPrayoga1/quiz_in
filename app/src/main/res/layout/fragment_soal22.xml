@@ -30,6 +30,7 @@
                 android:id="@+id/textView25"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Implikasi “p → q” tetap benar jika p salah dan q salah" />
         </LinearLayout>
 
