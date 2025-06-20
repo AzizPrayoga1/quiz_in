@@ -21,6 +21,7 @@ class soal22Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentSoal20Binding? = null
     private val binding get() =  _binding!!
+    private var benar = 0
 
 
     override fun onCreateView(
