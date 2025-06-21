@@ -38,6 +38,10 @@ class soal34Fragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
+
     companion object {
         /**
          * Use this factory method to create a new instance of
