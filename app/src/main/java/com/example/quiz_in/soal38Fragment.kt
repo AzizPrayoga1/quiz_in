@@ -41,6 +41,17 @@ class soal38Fragment : Fragment() {
 
     }
 
+    private fun lanjutKeSoal39() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal39Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
 
     companion object {
         /**
