@@ -36,6 +36,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
                 android:text="Logika proposisional menggunakan variabel seperti x dan y dalam bentuk fungsi" />
         </LinearLayout>
 
