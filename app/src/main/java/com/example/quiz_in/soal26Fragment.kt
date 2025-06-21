@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.quiz_in.databinding.FragmentSoal25Binding
+import com.example.quiz_in.databinding.FragmentSoal26Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,7 +20,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class soal26Fragment : Fragment() {
     // TODO: Rename and change types of parameters
-    private var _binding: FragmentSoal25Binding? = null
+    private var _binding: FragmentSoal26Binding? = null
     private val binding get() =  _binding!!
     private var benar = 0
 
@@ -33,13 +34,24 @@ class soal26Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentSoal25Binding.inflate(inflater,container,false)
+        _binding = FragmentSoal26Binding.inflate(inflater,container,false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+    }
+    private fun lanjutKeSoal27() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal27Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
     }
 
     companion object {
