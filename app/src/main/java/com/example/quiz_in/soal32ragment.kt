@@ -34,7 +34,7 @@ class soal32ragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_soal32ragment, container, false)
+        return inflater.inflate(R.layout.fragment_soal32, container, false)
     }
 
     companion object {
