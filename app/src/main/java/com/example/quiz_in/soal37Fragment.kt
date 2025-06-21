@@ -41,6 +41,27 @@ class soal37Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal38()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal38()
+        }
+
+    }
+
+    private fun lanjutKeSoal38() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal38Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
     }
 
     companion object {
