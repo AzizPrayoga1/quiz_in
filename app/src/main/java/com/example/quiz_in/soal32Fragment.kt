@@ -41,6 +41,14 @@ class soal32Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal33()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal33()
+        }
     }
 
     private fun lanjutKeSoal33() {
