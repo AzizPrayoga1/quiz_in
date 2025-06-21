@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:text="SOAl 46" />
+                android:text="SOAL 46" />
 
             <TextView
                 android:id="@+id/textView73"
