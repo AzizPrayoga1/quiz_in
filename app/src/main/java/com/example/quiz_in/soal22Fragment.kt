@@ -51,7 +51,7 @@ class soal22Fragment : Fragment() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = skorFragment()
+        val nextFragment = soal23Fragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
