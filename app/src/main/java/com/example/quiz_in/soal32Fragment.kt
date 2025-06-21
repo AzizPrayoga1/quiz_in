@@ -35,7 +35,7 @@ class soal32Fragment : Fragment() {
         _binding = FragmentSoal32Binding.inflate(inflater,container,false)
         return binding.root
     }
-    }
+
 
     companion object {
         /**
