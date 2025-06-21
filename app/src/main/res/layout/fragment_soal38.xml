@@ -32,7 +32,7 @@
                 android:id="@+id/textView57"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Pernyataan “Semua burung bisa terbang” menggunakan kuantor universal." />
         </LinearLayout>
 
         <LinearLayout
