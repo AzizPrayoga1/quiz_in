@@ -22,6 +22,8 @@ class soal40Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentSoal40Binding? = null
     private val binding get() =  _binding!!
+    private var benar = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +37,7 @@ class soal40Fragment : Fragment() {
         _binding = FragmentSoal40Binding.inflate(inflater,container,false)
         return binding.root
     }
+
 
     companion object {
         /**
