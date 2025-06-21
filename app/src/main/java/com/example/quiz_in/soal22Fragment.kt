@@ -36,6 +36,7 @@ class soal22Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        benar = arguments?.getInt("benar", 0) ?: 0
         binding.btnsalah1.setOnClickListener {
             lanjutKeSoal23()
         }
@@ -50,7 +51,7 @@ class soal22Fragment : Fragment() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = soal23Fragment()
+        val nextFragment = skorFragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
