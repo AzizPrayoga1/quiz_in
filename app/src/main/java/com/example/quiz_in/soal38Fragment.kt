@@ -38,6 +38,8 @@ class soal38Fragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // Ambil nilai skor dari fragment sebelumnya
+        benar = arguments?.getInt("benar", 0) ?: 0
 
         binding.btnsalah1.setOnClickListener {
             lanjutKeSoal39()
