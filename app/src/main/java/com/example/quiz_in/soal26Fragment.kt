@@ -43,6 +43,14 @@ class soal26Fragment : Fragment() {
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
 
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal27()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal27()
+        }
     }
     private fun lanjutKeSoal27() {
         val bundle = Bundle().apply {
