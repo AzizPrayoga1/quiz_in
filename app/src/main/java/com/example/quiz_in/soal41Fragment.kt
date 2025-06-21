@@ -37,6 +37,13 @@ class soal41Fragment : Fragment() {
         _binding = FragmentSoal41Binding.inflate(inflater,container,false)
         return binding.root
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        // Ambil nilai skor dari fragment sebelumnya
+        benar = arguments?.getInt("benar", 0) ?: 0
+
         binding.btnsalah1.setOnClickListener {
             lanjutKeSoal42()
         }
@@ -45,10 +52,6 @@ class soal41Fragment : Fragment() {
             benar += 1
             lanjutKeSoal42()
         }
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
     }
 
     private fun lanjutKeSoal42() {
