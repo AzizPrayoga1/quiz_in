@@ -24,6 +24,7 @@
                 android:id="@+id/textView72"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="25sp"
                 android:text="SOAl 46" />
 
             <TextView
