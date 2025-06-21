@@ -26,17 +26,6 @@ class soal25Fragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Ambil nilai skor dari fragment sebelumnya
-        benar = arguments?.getInt("benar", 0) ?: 0
-
-        binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal26()
-        }
-
-        binding.btnbenar1.setOnClickListener {
-            benar += 1
-            lanjutKeSoal26()
-        }
     }
 
     override fun onCreateView(
@@ -50,6 +39,17 @@ class soal25Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // Ambil nilai skor dari fragment sebelumnya
+        benar = arguments?.getInt("benar", 0) ?: 0
+
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal26()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal26()
+        }
 
     }
 
