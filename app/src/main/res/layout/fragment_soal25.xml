@@ -34,6 +34,7 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:layout_marginTop="20dp"
                 android:text="Tautologi adalah pernyataan yang selalu salah. " />
         </LinearLayout>
 
