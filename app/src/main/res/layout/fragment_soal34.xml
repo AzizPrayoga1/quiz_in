@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout24"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:orientation="vertical"
@@ -20,9 +21,10 @@
         <LinearLayout
             android:layout_width="409dp"
             android:layout_height="528dp"
+            android:layout_marginTop="1dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="202dp"></LinearLayout>
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout24"></LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
