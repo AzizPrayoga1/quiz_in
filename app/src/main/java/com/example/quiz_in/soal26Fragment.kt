@@ -20,7 +20,7 @@ private const val ARG_PARAM2 = "param2"
 class soal26Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentSoal25Binding? = null
-    private val binding get() =  _binding!!\
+    private val binding get() =  _binding!!
     private var benar = 0
 
 
