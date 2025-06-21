@@ -32,7 +32,7 @@
                 android:id="@+id/textView37"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Disjungsi hanya salah jika kedua pernyataan bernilai salah. " />
         </LinearLayout>
 
         <LinearLayout
