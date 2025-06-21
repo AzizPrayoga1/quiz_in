@@ -32,7 +32,7 @@
                 android:id="@+id/textView73"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="“p → q” bernilai salah jika dan hanya jika p benar dan q salah. " />
         </LinearLayout>
 
         <LinearLayout
