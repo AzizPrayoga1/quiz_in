@@ -36,9 +36,19 @@ class soal35Fragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentSoal35Binding.inflate(inflater,container,false)
         return binding.root
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal36()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal36()
+        }
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
 
     private fun lanjutKeSoal36() {
