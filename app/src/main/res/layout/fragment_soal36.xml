@@ -32,7 +32,7 @@
                 android:id="@+id/textView53"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Dalam logika predikat, simbol ∃ menyatakan “semua”." />
         </LinearLayout>
 
         <LinearLayout
