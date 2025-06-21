@@ -32,7 +32,7 @@
                 android:id="@+id/textView75"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="“¬(p ∧ q)” ekuivalen dengan “¬p ∨ ¬q” (Hukum De Morgan). " />
         </LinearLayout>
 
         <LinearLayout
