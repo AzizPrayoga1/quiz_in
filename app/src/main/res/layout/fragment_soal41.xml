@@ -32,7 +32,7 @@
                 android:id="@+id/textView63"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="“Tidak ada manusia yang terbang” bisa ditulis sebagai ¬∃x (Manusia(x) ∧ Terbang(x))." />
         </LinearLayout>
 
         <LinearLayout
