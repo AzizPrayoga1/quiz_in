@@ -32,7 +32,7 @@
                 android:id="@+id/textView65"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Logika proposisional lebih kompleks daripada logika predikat." />
         </LinearLayout>
 
         <LinearLayout
