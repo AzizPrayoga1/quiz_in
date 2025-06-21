@@ -25,9 +25,6 @@ class skorFragment : Fragment() {
 
     private var benar = 0
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,7 +39,7 @@ class skorFragment : Fragment() {
 
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
-        val hasil = benar * 5
+        val hasil = benar
         // Tampilkan skor di TextView
         binding.txtskor.text = "$hasil"
         binding.btnlagi.setOnClickListener {
@@ -66,6 +63,9 @@ class skorFragment : Fragment() {
             .addToBackStack(null)
             .commit()
 
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
     }
     private fun exit() {
         val intent = Intent(requireContext(), MainActivity::class.java)
