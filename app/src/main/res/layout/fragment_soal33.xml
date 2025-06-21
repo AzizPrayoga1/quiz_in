@@ -35,6 +35,7 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:layout_marginTop="20dp"
                 android:text="Hukum De Morgan menyatakan ¬(p ∨ q) = ¬p ∧ ¬q. " />
         </LinearLayout>
 
