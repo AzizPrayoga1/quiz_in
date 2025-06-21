@@ -36,6 +36,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
                 android:text="“Tidak ada manusia yang terbang” bisa ditulis sebagai ¬∃x (Manusia(x) ∧ Terbang(x))." />
         </LinearLayout>
 
