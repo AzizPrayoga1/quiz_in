@@ -22,6 +22,8 @@ class soal39Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentSoal39Binding? = null
     private val binding get() =  _binding!!
+    private var benar = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
