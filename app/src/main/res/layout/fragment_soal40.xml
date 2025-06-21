@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
                 android:textStyle="bold"
+                android:gravity="center"
                 android:text="Dalam logika predikat, predikat adalah fungsi yang menghasilkan nilai benar atau salah. " />
         </LinearLayout>
 
