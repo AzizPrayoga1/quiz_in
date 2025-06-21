@@ -31,6 +31,7 @@
                 android:id="@+id/textView31"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="25sp"
                 android:text="Tautologi adalah pernyataan yang selalu salah. " />
         </LinearLayout>
 
