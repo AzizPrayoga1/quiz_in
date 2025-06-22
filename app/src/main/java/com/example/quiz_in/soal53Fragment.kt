@@ -34,7 +34,7 @@ class soal53Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentSoal40Binding.inflate(inflater,container,false)
+        _binding = FragmentSoal53Binding.inflate(inflater,container,false)
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
