@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.quiz_in.databinding.FragmentSoal40Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,17 +17,15 @@ private const val ARG_PARAM2 = "param2"
  * Use the [soal53Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class soal53Fragment : Fragment() {
+class soal40Fragment : Fragment() {
     // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var _binding: FragmentSoal40Binding? = null
+    private val binding get() =  _binding!!
+    private var benar = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
@@ -34,7 +33,34 @@ class soal53Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_soal53, container, false)
+        _binding = FragmentSoal40Binding.inflate(inflater,container,false)
+        return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        // Ambil nilai skor dari fragment sebelumnya
+        benar = arguments?.getInt("benar", 0) ?: 0
+
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal41()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal41()
+        }
+    }
+
+    private fun lanjutKeSoal41() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal41Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
     }
 
     companion object {
