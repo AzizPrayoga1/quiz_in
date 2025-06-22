@@ -23,8 +23,6 @@ class soal16Fragment : Fragment() {
     private val binding get() = _binding!!
     private var benar = 0
 
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
