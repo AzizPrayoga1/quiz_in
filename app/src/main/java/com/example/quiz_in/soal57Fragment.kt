@@ -5,9 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.quiz_in.databinding.FragmentSoal20Binding
-import com.example.quiz_in.databinding.FragmentSoal50Binding
 import com.example.quiz_in.databinding.FragmentSoal56Binding
+import com.example.quiz_in.databinding.FragmentSoal57Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,12 +15,12 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [soal50Fragment.newInstance] factory method to
+ * Use the [soal57Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class soal50Fragment : Fragment() {
+class soal57Fragment : Fragment() {
     // TODO: Rename and change types of parameters
-    private var _binding: FragmentSoal50Binding? = null
+    private var _binding: FragmentSoal57Binding? = null
     private val binding get() = _binding!!
     private var benar = 0
 
@@ -35,7 +34,7 @@ class soal50Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentSoal50Binding.inflate(inflater, container, false)
+        _binding = FragmentSoal57Binding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -45,20 +44,20 @@ class soal50Fragment : Fragment() {
         benar = arguments?.getInt("benar", 0) ?: 0
 
         binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal51()
+            lanjutKeSoal58()
         }
 
         binding.btnbenar1.setOnClickListener {
             benar += 1
-            lanjutKeSoal51()
+            lanjutKeSoal58()
         }
     }
 
-    private fun lanjutKeSoal51() {
+    private fun lanjutKeSoal58() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = soal51Fragment()
+        val nextFragment = soal58Fragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
@@ -73,12 +72,12 @@ class soal50Fragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Soal50Fragment.
+         * @return A new instance of fragment soal57Fragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            soal50Fragment().apply {
+            soal57Fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
