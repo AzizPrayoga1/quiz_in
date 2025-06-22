@@ -35,7 +35,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="Jika suatu sistem hanya menerima input boolean, maka sistem itu tidak bisa menggunakan logika fuzzy. "
+                android:text="Jika uatu sistem hanya menerima input boolean, maka sistem itu tidak bisa menggunakan logika fuzzy. "
                 android:textSize="25sp"
                 android:textStyle="bold" />
         </LinearLayout>
