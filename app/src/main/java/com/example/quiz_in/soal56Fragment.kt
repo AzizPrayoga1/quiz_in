@@ -84,4 +84,3 @@ class soal56Fragment : Fragment() {
                 }
             }
     }
-}
