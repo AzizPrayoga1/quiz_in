@@ -21,7 +21,7 @@ private const val ARG_PARAM2 = "param2"
 class soal56Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentSoal56Binding? = null
-    private val binding get() =  _binding!!
+    private val binding get() = _binding!!
     private var benar = 0
 
 
@@ -34,9 +34,10 @@ class soal56Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentSoal56Binding.inflate(inflater,container,false)
+        _binding = FragmentSoal56Binding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // Ambil nilai skor dari fragment sebelumnya
@@ -83,3 +84,4 @@ class soal56Fragment : Fragment() {
                 }
             }
     }
+}
