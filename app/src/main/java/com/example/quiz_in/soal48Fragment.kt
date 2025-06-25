@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.quiz_in.databinding.FragmentSoal16Binding
+import com.example.quiz_in.databinding.FragmentSoal47Binding
 import com.example.quiz_in.databinding.FragmentSoal48Binding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -52,7 +52,7 @@ class soal48Fragment : Fragment() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = lanjutKeSoal49()
+        val nextFragment = soal49Fragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
