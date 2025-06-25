@@ -28,15 +28,24 @@ class soal76Fragment : Fragment() {
         super.onCreate(savedInstanceState)
 
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_soal76, container, false)
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal3()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal3()
+        }
+
     }
     private fun lanjutKeSoal3() {
         val bundle = Bundle().apply {
