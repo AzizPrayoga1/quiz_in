@@ -16,7 +16,14 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout41"></LinearLayout>
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout41">
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout41"
