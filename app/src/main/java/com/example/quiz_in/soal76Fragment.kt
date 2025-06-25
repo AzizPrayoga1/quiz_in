@@ -38,7 +38,21 @@ class soal76Fragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_soal76, container, false)
     }
+    private fun lanjutKeSoal3() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal3Fragment()
+        nextFragment.arguments = bundle
 
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
