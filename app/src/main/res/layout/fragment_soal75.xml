@@ -34,6 +34,7 @@
                 android:id="@+id/textView77"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="25sp"
                 android:text="Dalam logika proposisional, tidak ada fungsi turunan." />
         </LinearLayout>
 
