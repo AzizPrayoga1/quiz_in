@@ -38,6 +38,7 @@ class soal76Fragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        benar = arguments?.getInt("benar", 0) ?: 0
         binding.btnsalah1.setOnClickListener {
             lanjutKeSoal77()
             benar += 1
