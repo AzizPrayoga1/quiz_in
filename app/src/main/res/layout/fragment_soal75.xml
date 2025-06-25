@@ -34,6 +34,7 @@
                 android:id="@+id/textView77"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textSize="25sp"
