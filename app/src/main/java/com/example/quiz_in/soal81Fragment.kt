@@ -23,6 +23,7 @@ class soal81Fragment : Fragment() {
 
     private var _binding: FragmentSoal81Binding? = null
     private val binding get() = _binding!!
+    private var benar = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
