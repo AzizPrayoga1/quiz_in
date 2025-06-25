@@ -12,9 +12,9 @@
 
         <LinearLayout
             android:id="@+id/linearLayout42"
-            android:layout_width="200"
+            android:layout_width=""
             android:padding="16dp"
-            android:layout_height="200"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
