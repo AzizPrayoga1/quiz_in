@@ -32,7 +32,7 @@
                 android:id="@+id/textView89"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="p ∨ false hasilnya adalah p." />
         </LinearLayout>
 
         <LinearLayout
