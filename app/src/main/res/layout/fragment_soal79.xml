@@ -24,7 +24,7 @@
                 android:id="@+id/textView84"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="SOAL 79" />
 
             <TextView
                 android:id="@+id/textView85"
