@@ -33,25 +33,26 @@ class soal76Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_soal76, container, false)
+        _binding = FragmentSoal76Binding.inflate(inflater, container, false)
+        return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal3()
+            lanjutKeSoal77()
+            benar += 1
         }
 
         binding.btnbenar1.setOnClickListener {
-            benar += 1
-            lanjutKeSoal3()
+            lanjutKeSoal77()
         }
 
     }
-    private fun lanjutKeSoal3() {
+    private fun lanjutKeSoal77() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = soal3Fragment()
+        val nextFragment = soal77Fragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
