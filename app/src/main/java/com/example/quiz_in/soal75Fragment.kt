@@ -35,7 +35,17 @@ class soal75Fragment : Fragment() {
         _binding = FragmentSoal75Binding.inflate(inflater, container, false)
         return binding.root
     }
+    private fun lanjutKeSoal76() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal76Fragment()
+        nextFragment.arguments = bundle
 
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
 
     companion object {
         /**
