@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.quiz_in.databinding.FragmentSoal2Binding // This import seems unused in this specific file
+import com.example.quiz_in.databinding.FragmentSoal78Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,7 +20,8 @@ private const val ARG_PARAM2 = "param2"
  */
 class soal78Fragment : Fragment() {
     // TODO: Rename and change types of parameters
-
+    private var _binding: FragmentSoal78Binding? = null // Changed type here
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,10 +32,9 @@ class soal78Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_soal78, container, false)
+        _binding = FragmentSoal78Binding.inflate(inflater, container, false)
+        return binding.root
     }
-
     companion object {
         /**
          * Use this factory method to create a new instance of
