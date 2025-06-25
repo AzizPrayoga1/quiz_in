@@ -35,6 +35,21 @@ class soal75Fragment : Fragment() {
         _binding = FragmentSoal75Binding.inflate(inflater, container, false)
         return binding.root
     }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Ambil nilai skor dari fragment sebelumnya
+
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal76()
+        }
+
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal76()
+        }
+
+    }
     private fun lanjutKeSoal76() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
