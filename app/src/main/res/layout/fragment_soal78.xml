@@ -42,7 +42,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout41"
-            android:layout_width="200"
+            android:layout_width="match_parent"
             android:layout_height="100"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
