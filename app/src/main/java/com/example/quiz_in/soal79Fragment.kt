@@ -42,7 +42,14 @@ class soal79Fragment : Fragment() {
 
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal3()
+        }
 
+        binding.btnbenar1.setOnClickListener {
+            benar += 1
+            lanjutKeSoal3()
+        }
 
     }
 
