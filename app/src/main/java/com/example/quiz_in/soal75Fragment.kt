@@ -32,9 +32,10 @@ class soal75Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_soal75, container, false)
+        _binding = FragmentSoal75Binding.inflate(inflater, container, false)
+        return binding.root
     }
+
 
     companion object {
         /**
