@@ -13,6 +13,7 @@
         <LinearLayout
             android:id="@+id/linearLayout42"
             android:layout_width="200"
+            android:padding="16dp"
             android:layout_height="200"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
