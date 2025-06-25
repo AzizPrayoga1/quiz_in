@@ -42,14 +42,30 @@ class soal78Fragment : Fragment() {
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
         binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal3()
+            lanjutKeSoal79()
         }
 
         binding.btnbenar1.setOnClickListener {
             benar += 1
-            lanjutKeSoal3()
+            lanjutKeSoal79()
         }
 
+    }
+    private fun lanjutKeSoal79() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal79Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
     companion object {
         /**
