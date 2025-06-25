@@ -29,21 +29,6 @@ class soal77Fragment : Fragment() {
         super.onCreate(savedInstanceState)
 
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        // Ambil nilai skor dari fragment sebelumnya
-        benar = arguments?.getInt("benar", 0) ?: 0
-        binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal3()
-        }
-
-        binding.btnbenar1.setOnClickListener {
-            benar += 1
-            lanjutKeSoal3()
-        }
-
-    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -51,6 +36,38 @@ class soal77Fragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentSoal77Binding.inflate(inflater, container, false)
         return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Ambil nilai skor dari fragment sebelumnya
+        benar = arguments?.getInt("benar", 0) ?: 0
+        binding.btnsalah1.setOnClickListener {
+            lanjutKeSoal78()
+            benar += 1
+        }
+
+        binding.btnbenar1.setOnClickListener {
+
+            lanjutKeSoal78()
+        }
+
+    }
+    private fun lanjutKeSoal78() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal78Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     companion object {
