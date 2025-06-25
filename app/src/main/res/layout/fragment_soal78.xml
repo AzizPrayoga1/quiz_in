@@ -31,6 +31,7 @@
             <TextView
                 android:id="@+id/textView83"
                 android:layout_width="match_parent"
+                android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:text="Suatu ekspresi logika dapat disederhanakan dengan hukum identitas. " />
         </LinearLayout>
