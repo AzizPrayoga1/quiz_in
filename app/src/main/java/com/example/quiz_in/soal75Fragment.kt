@@ -39,7 +39,7 @@ class soal75Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Ambil nilai skor dari fragment sebelumnya
-
+        benar = arguments?.getInt("benar", 0) ?: 0
         binding.btnsalah1.setOnClickListener {
             lanjutKeSoal76()
         }
