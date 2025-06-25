@@ -43,16 +43,26 @@ class soal79Fragment : Fragment() {
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
         binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal3()
+            lanjutKeSoal80()
         }
 
         binding.btnbenar1.setOnClickListener {
             benar += 1
-            lanjutKeSoal3()
+            lanjutKeSoal80()
         }
 
     }
+    private fun lanjutKeSoal80() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal80Fragment()
+        nextFragment.arguments = bundle
 
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
