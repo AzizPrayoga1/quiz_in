@@ -22,6 +22,7 @@ class soal83Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentSoal83Binding? = null
     private val binding get() = _binding!!
+    private var benar = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,12 +43,12 @@ class soal83Fragment : Fragment() {
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
         binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal3()
+            lanjutKeSoal84()
         }
 
         binding.btnbenar1.setOnClickListener {
             benar += 1
-            lanjutKeSoal3()
+            lanjutKeSoal84()
         }
 
     }
