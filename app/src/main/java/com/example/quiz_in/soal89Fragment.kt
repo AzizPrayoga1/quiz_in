@@ -38,21 +38,21 @@ class soal89Fragment : Fragment() {
         // Ambil nilai skor dari fragment sebelumnya
         benar = arguments?.getInt("benar", 0) ?: 0
         binding.btnsalah1.setOnClickListener {
-            lanjutKeSoal89()
+            lanjutKeSoal90()
         }
 
         binding.btnbenar1.setOnClickListener {
             benar += 1
-            lanjutKeSoal89()
+            lanjutKeSoal90()
         }
 
     }
 
-    private fun lanjutKeSoal89() {
+    private fun lanjutKeSoal90() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = soal89Fragment()
+        val nextFragment = soal90Fragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
