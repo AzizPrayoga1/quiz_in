@@ -44,6 +44,7 @@ class soal87Fragment : Fragment() {
 
         binding.btnbenar1.setOnClickListener {
             benar += 1
+
             lanjutKeSoal88()
         }
 
