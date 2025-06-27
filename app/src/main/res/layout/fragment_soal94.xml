@@ -26,7 +26,7 @@
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SOAL 1"
+                android:text="SOAL 94"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="Jika suatu pernyataan bernilai benar, maka negasinya pasti bernilai salah."
+                android:text="False OR False hasilnya adalah False."
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
