@@ -52,7 +52,22 @@ class soal83Fragment : Fragment() {
         }
 
     }
+    private fun lanjutKeSoal84() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal84Fragment()
+        nextFragment.arguments = bundle
 
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
