@@ -30,6 +30,7 @@
             <TextView
                 android:id="@+id/textView90"
                 android:layout_width="match_parent"
+                android:textSize="25sp"
                 android:layout_height="wrap_content"
                 android:text="Operator NOR merupakan negasi dari OR" />
         </LinearLayout>
