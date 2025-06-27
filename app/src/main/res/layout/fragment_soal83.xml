@@ -32,6 +32,7 @@
                 android:id="@+id/textView93"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="25sp"
                 android:text="Logika digital terdiri atas gerbang logika AND, OR, NOT." />
         </LinearLayout>
 
