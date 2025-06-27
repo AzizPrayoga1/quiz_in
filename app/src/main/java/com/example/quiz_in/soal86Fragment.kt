@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.quiz_in.databinding.FragmentSoal2Binding
+import com.example.quiz_in.databinding.FragmentSoal86Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,7 +20,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class soal86Fragment : Fragment() {
     // TODO: Rename and change types of parameters
-    private var _binding: FragmentSoal2Binding? = null
+    private var _binding: FragmentSoal86Binding? = null
     private val binding get() = _binding!!
 
     private var benar = 0
@@ -28,7 +29,7 @@ class soal86Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSoal2Binding.inflate(inflater, container, false)
+        _binding = FragmentSoal86Binding.inflate(inflater, container, false)
         return binding.root
     }
 
