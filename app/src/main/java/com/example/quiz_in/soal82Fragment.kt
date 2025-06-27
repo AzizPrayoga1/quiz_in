@@ -51,6 +51,18 @@ class soal82Fragment : Fragment() {
         }
 
     }
+
+    private fun lanjutKeSoal83() {
+        val bundle = Bundle().apply {
+            putInt("benar", benar)
+        }
+        val nextFragment = soal83Fragment()
+        nextFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.container, nextFragment)
+            .commit()
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
