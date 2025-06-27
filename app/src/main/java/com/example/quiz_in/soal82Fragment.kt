@@ -39,7 +39,8 @@ class soal82Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        // Ambil nilai skor dari fragment sebelumnya
+        benar = arguments?.getInt("benar", 0) ?: 0
 
     }
     companion object {
