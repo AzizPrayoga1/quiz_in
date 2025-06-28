@@ -4,47 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".soal83Fragment">
+    tools:context=".soal97Fragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout47"
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
+            android:gravity="center"
             android:orientation="vertical"
+            android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/textView92"
+                android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="SOAL 97"
                 android:textSize="25sp"
-                android:textStyle="bold"
-                android:text="SOAL 83" />
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView93"
-                android:layout_width="match_parent"
+                android:id="@+id/soalText"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:textSize="25sp"
+                android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:textStyle="bold"
-                android:text="Logika digital terdiri atas gerbang logika AND, OR, NOT." />
+                android:text="Dalam logika proposisional, urutan evaluasi tidak penting."
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout47">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
             <Button
                 android:id="@+id/btnbenar1"
@@ -59,6 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="False" />
+
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
