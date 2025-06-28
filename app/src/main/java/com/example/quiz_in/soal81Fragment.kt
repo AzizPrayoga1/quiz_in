@@ -57,7 +57,7 @@ class soal81Fragment : Fragment() {
         val bundle = Bundle().apply {
             putInt("benar", benar)
         }
-        val nextFragment = soa82Fragment()
+        val nextFragment = soal82Fragment()
         nextFragment.arguments = bundle
 
         parentFragmentManager.beginTransaction()
